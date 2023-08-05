@@ -24,7 +24,7 @@ echo 'export PS1="\[\e]0;\u:\W\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32
 echo "source ~/venv/bin/activate" >> ~/.bashrc
 
 echo "Installing Python depenencies..."
-source ~/venv/bin/activate && python3 -m pip install --upgrade pip wheel
+source ~/venv/bin/activate && python3.9 -m pip install --upgrade pip wheel
 source ~/venv/bin/activate && pip install -r requirements.txt
 
 echo "Starting the Postgres Docker container..."
